@@ -1,0 +1,663 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* Set the image to fill the viewport width and height */
+        img {
+            width: 100%;
+            height: 100vh; /* 100% of the viewport height */
+            object-fit: cover; /* Maintain aspect ratio and cover the viewport */
+        }
+    </style>
+    <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            /*background-image: url(''); !* Add your background image path *!*/
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+
+        h1 {
+            color: #dc3545;
+            margin-top: 50px;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #dc3545; /* Change link text color to blue */
+            text-decoration: none;
+        }
+
+        .signup-link {
+            margin-top: 10px;
+            color: #333; /* Change link text color to a readable color */
+        }
+    </style>
+</head>
+
+<body>
+<img src="../static/im1.png" />
+
+
+
+
+<h1>Login</h1>
+<form th:action="@{/login.html}" method="post">
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+        <button type="submit">Login</button>
+    </div>
+    <p class="signup-link">Not registered yet? <a th:href="@{/signup.html}">Signup</a></p>
+</form>
+
+<script>
+    // JavaScript code for form validation and interactivity
+    const form = document.querySelector('form');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+
+    form.addEventListener('submit', function(event) {
+        if (!usernameInput.value.trim()) {
+            event.preventDefault(); // Prevent form submission
+            alert('Please enter your username.');
+            usernameInput.focus();
+        } else if (!passwordInput.value.trim()) {
+            event.preventDefault(); // Prevent form submission
+            alert('Please enter your password.');
+            passwordInput.focus();
+        }
+    });
+
+    // Optional: Add a focus effect on form fields
+    usernameInput.addEventListener('focus', function() {
+        this.style.border = '2px solid #007bff';
+    });
+
+    usernameInput.addEventListener('blur', function() {
+        this.style.border = '1px solid #ccc';
+    });
+
+    passwordInput.addEventListener('focus', function() {
+        this.style.border = '2px solid #007bff';
+    });
+
+    passwordInput.addEventListener('blur', function() {
+        this.style.border = '1px solid #ccc';
+    });
+</script>
+</body>
+</html>
+-->
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* Set the image to fill the viewport width and height */
+        img {
+            width: 100%;
+            height: 100vh; /* 100% of the viewport height */
+            object-fit: cover; /* Maintain aspect ratio and cover the viewport */
+        }
+    </style>
+    <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../static/im1.png');
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            color: #dc3545;
+            margin-top: 0;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #dc3545;
+            text-decoration: none;
+        }
+
+        .signup-link {
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form th:action="@{/login.html}" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+        <p class="signup-link">Not registered yet? <a th:href="@{/signup.html}">Signup</a></p>
+    </form>
+</div>
+
+<script>
+    // JavaScript code for form validation and interactivity
+    const form = document.querySelector('form');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+
+    form.addEventListener('submit', function(event) {
+        if (!usernameInput.value.trim()) {
+            event.preventDefault(); // Prevent form submission
+            alert('Please enter your username.');
+            usernameInput.focus();
+        } else if (!passwordInput.value.trim()) {
+            event.preventDefault(); // Prevent form submission
+            alert('Please enter your password.');
+            passwordInput.focus();
+        }
+    });
+
+    // Optional: Add a focus effect on form fields
+    usernameInput.addEventListener('focus', function() {
+        this.style.border = '2px solid #007bff';
+    });
+
+    usernameInput.addEventListener('blur', function() {
+        this.style.border = '1px solid #ccc';
+    });
+
+    passwordInput.addEventListener('focus', function() {
+        this.style.border = '2px solid #007bff';
+    });
+
+    passwordInput.addEventListener('blur', function() {
+        this.style.border = '1px solid #ccc';
+    });
+</script>
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* Set the image to fill the viewport width and height */
+        img {
+            width: 100%;
+            height: 100vh; /* 100% of the viewport height */
+            object-fit: cover; /* Maintain aspect ratio and cover the viewport */
+        }
+    </style>
+    <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../static/im1.png');
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            color: #dc3545;
+            margin-top: 0;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #dc3545;
+            text-decoration: none;
+        }
+
+        .signup-link {
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form th:action="@{/login.html}" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+        <p class="signup-link">Not registered yet? <a th:href="@{/signup.html}">Signup</a></p>
+    </form>
+</div>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+    function onSignIn(googleUser) {
+        const profile = googleUser.getBasicProfile();
+        const idToken = googleUser.getAuthResponse().id_token;
+        const username = profile.getName();
+        const email = profile.getEmail();
+        alert(`Logged in as: ${username}\nEmail: ${email}`);
+    }
+</script>
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        /* Set the image to fill the viewport width and height */
+        img {
+            width: 100%;
+            height: 100vh; /* 100% of the viewport height */
+            object-fit: cover; /* Maintain aspect ratio and cover the viewport */
+        }
+    </style>
+    <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+           /* background-image: url('../static/im1.png');*/
+            background-image: url('../static/edu.png');
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s; /* Add a transition for smooth effects */
+        }
+
+        .container:hover {
+            transform: scale(1.05); /* Enlarge the container on hover */
+        }
+
+        h1 {
+            color: #2a73cc;
+            margin-top: 0;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add a transition for background color change */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2a73cc; /* Change the background color on hover */
+        }
+
+        a {
+            color: #2a73cc;
+            text-decoration: none;
+        }
+
+        .signup-link {
+            margin-top: 10px;
+            color: #333;
+        }
+       </style>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form th:action="@{/ulogin}" method="post">
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6Lf0J8AoAAAAAG9kLpH_yKdwn27jrWfziAOHkRbU"></div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+        <p class="signup-link">Not registered yet? <a th:href="@{/usignup}">Signup</a></p>
+    </form>
+</div>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+    function onSignIn(googleUser) {
+        const profile = googleUser.getBasicProfile();
+        const idToken = googleUser.getAuthResponse().id_token;
+        const username = profile.getName();
+        const email = profile.getEmail();
+        alert(`Logged in as: ${username}\nEmail: ${email}`);
+    }
+</script>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        /* Set the image to fill the viewport width and height */
+        img {
+            width: 100%;
+            height: 100vh; /* 100% of the viewport height */
+            object-fit: cover; /* Maintain aspect ratio and cover the viewport */
+        }
+    </style>
+    <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            /* background-image: url('../static/im1.png');*/
+            background-image: url('../static/edu.png');
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s; /* Add a transition for smooth effects */
+        }
+
+        .container:hover {
+            transform: scale(1.05); /* Enlarge the container on hover */
+        }
+
+        h1 {
+            color: #2a73cc;
+            margin-top: 0;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add a transition for background color change */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2a73cc; /* Change the background color on hover */
+        }
+
+        a {
+            color: #2a73cc;
+            text-decoration: none;
+        }
+
+        .signup-link {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .forgot-password-link {
+            margin-top: 10px;
+            color: #2a73cc;
+            text-decoration: none;
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form th:action="@{/ulogin}" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6Lf0J8AoAAAAAG9kLpH_yKdwn27jrWfziAOHkRbU"></div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+        <p class="signup-link">Not registered yet? <a th:href="@{/usignup}">Signup</a></p>
+        <p class="forgot-password-link"><a href="/reset-password">Forgot Password?</a></p> <!-- Added Forgot Password link -->
+    </form>
+</div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+    function onSignIn(googleUser) {
+        const profile = googleUser.getBasicProfile();
+        const idToken = googleUser.getAuthResponse().id_token;
+        const username = profile.getName();
+        const email = profile.getEmail();
+        alert(`Logged in as: ${username}\nEmail: ${email}`);
+    }
+</script>
+</body>
+
+</html>

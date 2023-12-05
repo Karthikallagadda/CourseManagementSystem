@@ -1,0 +1,877 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to Coursera-like</h1>
+    <p>Learn Anything, Anytime, Anywhere</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Specializations</a>
+    <a href="#">Degrees</a>
+    <a href="#">Log In</a>
+    <a href="#">Sign Up</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card">
+        <img src="course1.jpg" alt="Course 1">
+        <h3>Course 1 Title</h3>
+        <p>Course 1 Description</p>
+    </div>
+    <div class="card">
+        <img src="course2.jpg" alt="Course 2">
+        <h3>Course 2 Title</h3>
+        <p>Course 2 Description</p>
+    </div>
+    <div class="card">
+        <img src="course3.jpg" alt="Course 3">
+        <h3>Course 3 Title</h3>
+        <p>Course 3 Description</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 100%;
+        }
+
+        .dropdown a {
+            display: block;
+            text-decoration: none;
+            color: #2a73cc;
+            padding: 10px;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+/*
+        .dropdown {
+            !*position: relative;*!
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            !*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*!
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }*/
+
+
+
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+           /min-width: 160px;
+            z-index: 1;
+        }
+
+
+        .dropdown {
+            display:  initial;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 10px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+     /*   .dropdown-content {
+            box-shadow: none;
+        }*/
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+
+    <a href="#">Specializations</a>
+
+    <div class="dropdown">
+        <a href="#">Degrees</a>
+
+        <div class="dropdown-content">
+            <a href="#">Bachelor's Degrees</a>
+            <a href="#">Master's Degrees</a>
+            <a href="#">Doctoral Degrees</a>
+        </div>
+    </div>
+
+    <a href="ulogin">Log In</a>
+    <a href="mycourses">My Courses</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card">
+        <img src="../static/corsera.png" alt="image"/>
+        <h3>AI Capstone Project with Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems.</p>
+    </div>
+    &lt;!&ndash; Add more course cards here &ndash;&gt;
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            text-decoration: none;
+            color: #2a73cc;
+            padding: 10px;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Specializations</a>
+
+    <div class="dropdown">
+        <a href="#">Degrees</a>
+        <div class="dropdown-content">
+            <a href="#">Bachelor's Degrees</a>
+            <a href="#">Master's Degrees</a>
+            <a href="#">Doctoral Degrees</a>
+        </div>
+    </div>
+
+    <a href="ulogin">Log In</a>
+    <a href="mycourses">My Courses</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card">
+        <img src="../static/corsera.png" alt="image"/>
+        <h3>AI Capstone Project with Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems.</p>
+    </div>
+    &lt;!&ndash; Add more course cards here &ndash;&gt;
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            text-decoration: none;
+            color: #2a73cc;
+            padding: 10px;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class= "search-bar">
+    <input type="text" placeholder="Search">
+    <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+
+    <div class="dropdown">
+        <a href="#">Specializations</a>
+        <div class="dropdown-content">
+            <a href="#">Specialization 1</a>
+            <a href="#">Specialization 2</a>
+            <a href="#">Specialization 3</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Degrees</a>
+        <div class="dropdown-content">
+            <a href="#">Bachelor's Degrees</a>
+            <a href="#">Master's Degrees</a>
+            <a href="#">Doctoral Degrees</a>
+        </div>
+    </div>
+
+    <a href="ulogin">Log In</a>
+    <a href="mycourses">My Courses</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card">
+        <img src="../static/corsera.png" alt="image"/>
+        <h3>AI Capstone Project with Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems.</p>
+    </div>
+    &lt;!&ndash; Add more course cards here &ndash;&gt;
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        .navbar-container {
+            overflow-x: auto; /* Add horizontal scrollbar */
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            text-decoration: none;
+            color: #2a73cc;
+            padding: 10px;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<div class="navbar-container"> &lt;!&ndash; Container for navbar with horizontal scrollbar &ndash;&gt;
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+
+        <div class="dropdown">
+            <a href="#">Specializations</a>
+            <div class="dropdown-content">
+                <a href="#">Specialization 1</a>
+                <a href="#">Specialization 2</a>
+                <a href="#">Specialization 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Degrees</a>
+            <div class="dropdown-content">
+                <a href="#">Bachelor's Degrees</a>
+                <a href="#">Master's Degrees</a>
+                <a href="#">Doctoral Degrees</a>
+            </div>
+        </div>
+
+        <a href="ulogin">Log In</a>
+        <a href="mycourses">My Courses</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card">
+        <img src="../static/corsera.png" alt="image"/>
+        <h3>AI Capstone Project with Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems.</p>
+    </div>
+    &lt;!&ndash; Add more course cards here &ndash;&gt;
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question and Answer</title>
+</head>
+<body>
+<h1>User Interface</h1>
+<form id="questionForm">
+    <label for="question">Ask a question:</label><br>
+    <input type="text" id="question" name="question"><br><br>
+    <button type="button" onclick="submitQuestion()">Submit Question</button>
+</form>
+
+<h1>Admin Interface</h1>
+<form id="responseForm">
+    <label for="questionId">Question ID:</label><br>
+    <input type="text" id="questionId" name="questionId"><br><br>
+    <label for="response">Your Response:</label><br>
+    <input type="text" id="response" name="response"><br><br>
+    <button type="button" onclick="submitResponse()">Submit Response</button>
+</form>
+
+<script>
+    function submitQuestion() {
+        const question = document.getElementById('question').value;
+        fetch('/chat/ask', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ question: question })
+        })
+            .then(response => response.text())
+            .then(data => {
+                alert(data); // Show the question ID generated
+            });
+    }
+
+    function submitResponse() {
+        const questionId = document.getElementById('questionId').value;
+        const response = document.getElementById('response').value;
+        fetch('/chat/answer', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ questionId: questionId, response: response })
+        })
+            .then(response => response.text())
+            .then(data => {
+                alert(data); // Show confirmation of response submission
+            });
+    }
+</script>
+</body>
+</html>
+-->
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    &lt;!&ndash; Your head content &ndash;&gt;
+</head>
+<body>
+<div id="admin-dashboard">
+    <h1>Admin Dashboard</h1>
+    <div id="admin-chat"></div>
+</div>
+
+<script>
+    const socket = new WebSocket('ws://localhost:8080/chat');
+    socket.onmessage = function(event) {
+        const adminChat = document.getElementById("admin-chat");
+        adminChat.innerHTML += `<p>${event.data}</p>`;
+    };
+</script>
+</body>
+</html>
+-->
+<!-- user.html -->
+<!-- ... existing code ... -->
+<!--
+
+<div class="container">
+    <div th:each="course : ${adminCourses}">
+        <div class="card">
+            <img th:src="${course.courseImage}" alt="Course Image">
+            <h3 th:text="${course.courseName}"></h3>
+            <p th:text="${course.description}"></p>
+            <form th:action="@{'/enroll/' + ${course.id}}" method="post">
+                <button type="submit">Enroll</button>
+            </form>
+        </div>
+    </div>
+</div>
+-->
+
+<!-- ... remaining code ... -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+<h1>Admin Dashboard</h1>
+<p>Number of Active Users: <span th:text="${activeUserCount}">0</span></p>
+</body>
+</html>

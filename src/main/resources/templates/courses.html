@@ -1,0 +1,444 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .course-card {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .course-image {
+            flex: 1;
+        }
+
+        .course-image img {
+            max-width: 100%;
+        }
+
+        .course-info {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .course-info h3 {
+            margin-top: 0;
+        }
+
+        .course-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .course-details span {
+            margin-right: 10px;
+        }
+
+        .course-info button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="course-card">
+    <div class="course-image">
+        <img src="course.jpg" alt="Course Image">
+    </div>
+
+    <div class="course-info">
+        <h3>Course Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc eu tincidunt lacinia, nisl nisl aliquam nisl.</p>
+
+        <div class="course-details">
+            <span>4.5</span>
+            <i class="fa fa-star"></i>
+            <span>125 Students</span>
+        </div>
+
+        <button>Enroll Now</button>
+    </div>
+</div>
+
+
+</body>
+</html>-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+
+    <style>
+        .navbar {
+            background: #007bff;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .course-card {
+            display: flex;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .course-image {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .course-image img {
+            max-width: 100%;
+        }
+
+        .course-info {
+            flex: 2;
+            padding: 10px;
+        }
+
+        .course-info h3 {
+            margin: 0;
+        }
+
+        .course-details {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .course-details span {
+            margin-right: 10px;
+        }
+
+        .course-info button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+
+<div class="course-card">
+    <div class="course-image">
+        <img src="course1.jpg" alt="Course Image 1">
+    </div>
+
+    <div class="course-info">
+        <h3>Course Title 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc eu tincidunt lacinia, nisl nisl aliquam nisl.</p>
+
+        <div class="course-details">
+            <span>4.5</span>
+            <i class="fa fa-star"></i>
+            <span>125 Students</span>
+        </div>
+
+        <button>Enroll Now</button>
+    </div>
+</div>
+
+<div class="course-card">
+    <div class="course-image">
+        <img src="course2.jpg" alt="Course Image 2">
+    </div>
+
+    <div class="course-info">
+        <h3>Course Title 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc eu tincidunt lacinia, nisl nisl aliquam nisl.</p>
+
+        <div class="course-details">
+            <span>4.8</span>
+            <i class="fa fa-star"></i>
+            <span>90 Students</span>
+        </div>
+
+        <button>Enroll Now</button>
+    </div>
+</div>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        .navbar-container {
+            overflow-x: auto; /* Add horizontal scrollbar */
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            text-decoration: none;
+            color: #2a73cc;
+            padding: 10px;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<div class="navbar-container"> <!-- Container for navbar with horizontal scrollbar -->
+    <nav>
+        <a href="/">Home</a>
+        <div class="dropdown">
+            <a href="courses.html">Courses</a>
+            <div class="dropdown-content">
+               <a href="computer%20science.html">computer Science</a>
+               <a href="#">Mechanical Courses</a>
+               <a href="#">Mechine Learning</a>
+        </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Specializations</a>
+            <div class="dropdown-content">
+                <a href="#">Specialization 1</a>
+                <a href="#">Specialization 2</a>
+                <a href="#">Specialization 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Degrees</a>
+            <div class="dropdown-content">
+                <a href="#">Bachelor's Degrees</a>
+                <a href="#">Master's Degrees</a>
+                <a href="#">Doctoral Degrees</a>
+            </div>
+        </div>
+
+        <a href="ulogin">Log In</a>
+        <a href="mycourses">My Courses</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h2>Courses</h2>
+    <div class="card">
+        <img src="../static/corsera.png" alt="image"/>
+        <h3>AI Capstone Project with Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems.</p>
+    </div>
+    <!-- Add more course cards here -->
+
+
+    <div class="card">
+
+
+        <img src="../static/dp.png"/>
+        <h3>Deep Learning</h3>
+        <p>
+            Deep learning, a subset of machine learning,
+            Unleashes neural networks to mimic human thinking.
+            With layers deep, it extracts patterns and insight,
+            Fueling AI's growth, day and night.</p>
+    </div>
+    <div class="card">
+
+        <img src="../static/XDP~COURSE!~deep-learning-business.png"/>
+        <h3>Deep-learning-business</h3>
+        <p>Deep learning in business, a transformative force,
+            Enhances decision-making, charting a new course.
+            From predictive analytics to automating tasks,
+            It unlocks hidden value and efficiency, unmasked.
+
+
+
+
+        </p>
+    </div>
+
+    <div class="card">
+
+
+
+        <img src="../static/XDP~COURSE!~launch-online-business1.png"/>
+        <h3>online-business</h3>
+        <p>Online business, a digital realm to explore,
+            E-commerce and services, it offers so much more.
+            Global reach, convenience, 24/7 open doors,
+            Opportunities abound like never before.
+
+
+
+
+
+        </p>
+    </div>
+    <div class="card">
+
+
+        <img src="../static/dp.png"/>
+        <h3>Deep Learning</h3>
+        <p>
+            Deep learning, a subset of machine learning,
+            Unleashes neural networks to mimic human thinking.
+            With layers deep, it extracts patterns and insight,
+            Fueling AI's growth, day and night.</p>
+    </div>
+    <div class="card">
+
+
+        <img src="../static/dp.png"/>
+        <h3>Deep Learning</h3>
+        <p>
+            Deep learning, a subset of machine learning,
+            Unleashes neural networks to mimic human thinking.
+            With layers deep, it extracts patterns and insight,
+            Fueling AI's growth, day and night.</p>
+    </div>
+    <!--<div class="container">
+
+        <h2>Courses</h2>
+
+        <div th:each="course : ${courses}">
+            <div class="card">
+                <img th:src="@{/images/{course.image}}" alt="image"/>
+                <h3 th:text="${course.name}"></h3>
+                <p th:text="${course.description}"></p>
+            </div>
+        </div>
+
+    </div>-->
+
+</div>
+
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+

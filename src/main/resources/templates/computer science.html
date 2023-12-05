@@ -1,0 +1,160 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+            cursor: pointer; /* Make the cards clickable */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Specializations</a>
+    <a href="#">Degrees</a>
+    <a href="ulogin">Log In</a>
+    <a href="usignup">Sign Up</a>
+    <a href="adminlogin">Admin</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card" id="course1" onclick="redirectToCourse('course1.html');">
+        <img src="/static/corsera.png" alt="image"/>
+        <h3>AI Capston Project using Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems. Participants develop and deploy deep learning models to address complex challenges, gaining hands-on experience in the field of artificial intelligence and machine learning</p>
+    </div>
+    <div class="card" id="projectManagement" onclick="redirectToCourse('project_management.html');">
+        <img src="../static/course3.png"/>
+        <h3>Project Management Essentials</h3>
+        <p>The Project Management Essentials course imparts fundamental skills to initiate, plan, execute, and close projects. It's suitable for both novices and professionals, equipping them with essential tools. Participants learn to manage projects of diverse sizes and complexity effectively,Additionally, this course empowers learners with the knowledge to monitor , successful project management in a dynamic environment.
+
+
+
+
+        </p>
+    </div>
+    <div class="card" id="course3" onclick="redirectToCourse('course3.html');">
+        <img src="../static/course2.png"/>
+        <h3>Brand and Product Management</h3>
+        <p>Brand and Product Management involves strategically overseeing a brand's image and the development of its products to meet customer needs and market demands. It encompasses brand positioning, market research, and product lifecycle management. Professionals in this field are responsible for shaping brand identity, launching new products, and ensuring long-term brand success.
+
+
+
+
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+
+<script>
+    function redirectToCourse(url) {
+        window.location.href = url;
+    }
+
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('mouseover', () => {
+            card.style.transform = 'scale(1.05)';
+            card.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.2)';
+        });
+        card.addEventListener('mouseout', () => {
+            card.style.transform = 'scale(1)';
+            card.style.boxShadow = 'none';
+        });
+    });
+</script>
+</body>
+</html>
+-->

@@ -1,0 +1,871 @@
+<!--
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+
+    <a href="#">Specializations</a>
+
+    <div class="dropdown">
+        <a href="#">Degrees</a>
+        <div class="dropdown-content">
+            <a href="#">Bachelor's Degrees</a>
+            <a href="#">Master's Degrees</a>
+            <a href="#">Doctoral Degrees</a>
+        </div>
+    </div>
+    <a href="ulogin">Log In</a>
+
+    <a href="mycourses">My Courses</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card">
+
+
+        <img src="/static/corsera.png" alt="image"/>
+        <h3>AI Capstone Project with Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems.</p>
+        
+    </div>
+    <div class="card">
+
+
+        <img src="../static/dp.png"/>
+        <h3>Deep Learning</h3>
+        <p>
+            Deep learning, a subset of machine learning,
+            Unleashes neural networks to mimic human thinking.
+            With layers deep, it extracts patterns and insight,
+            Fueling AI's growth, day and night.</p>
+    </div>
+    <div class="card">
+
+        <img src="../static/XDP~COURSE!~deep-learning-business.png"/>
+        <h3>Deep-learning-business</h3>
+        <p>Deep learning in business, a transformative force,
+            Enhances decision-making, charting a new course.
+            From predictive analytics to automating tasks,
+            It unlocks hidden value and efficiency, unmasked.
+
+
+
+
+        </p>
+    </div>
+
+    <div class="card">
+
+
+
+        <img src="../static/XDP~COURSE!~launch-online-business1.png"/>
+        <h3>online-business</h3>
+        <p>Online business, a digital realm to explore,
+            E-commerce and services, it offers so much more.
+            Global reach, convenience, 24/7 open doors,
+            Opportunities abound like never before.
+
+
+
+
+
+        </p>
+    </div>
+    <div class="card">
+
+
+        <img src="../static/dp.png"/>
+        <h3>Deep Learning</h3>
+        <p>
+            Deep learning, a subset of machine learning,
+            Unleashes neural networks to mimic human thinking.
+            With layers deep, it extracts patterns and insight,
+            Fueling AI's growth, day and night.</p>
+    </div>
+    <div class="card">
+
+
+        <img src="../static/dp.png"/>
+        <h3>Deep Learning</h3>
+        <p>
+            Deep learning, a subset of machine learning,
+            Unleashes neural networks to mimic human thinking.
+            With layers deep, it extracts patterns and insight,
+            Fueling AI's growth, day and night.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-->
+
+
+
+<!--
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .nav-item:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown a {
+            display: block;
+            text-decoration: none;
+            color: #2a73cc;
+            padding: 10px;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    &lt;!&ndash;<a href="#">Specializations</a>&ndash;&gt;
+    <div class="nav-item">
+        <a href="#">Specializations</a>
+        <div class="dropdown">
+            <a href="#">Specialization 1</a>
+            <a href="#">Specialization 2</a>
+            <a href="#">Specialization 3</a>
+        </div>
+    </div>
+    <a href="Degrees">Degrees</a>
+    <a href="ulogin">Log In</a>
+    <a href="mycourses">My Courses</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card">
+        <img src="../static/corsera.png" alt="image"/>
+        <h3>AI Capstone Project with Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems.</p>
+    </div>
+    &lt;!&ndash; Add more course cards here &ndash;&gt;
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-->
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .nav-item {
+            display: inline-block;
+            position: relative;
+        }
+
+        .nav-item:hover .dropdown {
+            display: block;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown a {
+            display: block;
+            text-decoration: none;
+            color: #2a73cc;
+            padding: 10px;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <div class="nav-item">
+        <a href="#">Specializations</a>
+        <div class="dropdown">
+            <a href="#">Specialization 1</a>
+            <a href="#">Specialization 2</a>
+            <a href="#">Specialization 3</a>
+        </div>
+    </div>
+    <div class="nav-item">
+        <a href="#">Degrees</a>
+        <div class="dropdown">
+            <a href="#">Degree 1</a>
+            <a href="#">Degree 2</a>
+            <a href="#">Degree 3</a>
+        </div>
+    </div>
+    <a href="ulogin">Log In</a>
+    <a href="mycourses">My Courses</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card">
+        <img src="../static/corsera.png" alt="image"/>
+        <h3>AI Capstone Project with Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems.</p>
+    </div>
+    &lt;!&ndash; Add more course cards here &ndash;&gt;
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        .navbar-container {
+            overflow-x: auto; /* Add horizontal scrollbar */
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            text-decoration: none;
+            color: #2a73cc;
+            padding: 10px;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        /* Other styles... */
+
+        /* Arrange the cards in a row */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        /* Adjust card width and margins */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            /*margin: 10px;*/
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+            margin-top: 10px
+        }
+
+
+        /* Card images */
+        .card img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+
+
+
+<!--
+<form th:action="@{/userQuestions}" method="post">
+    <label>
+        <input type="text" name="question" placeholder="Your question" />
+    </label>
+    <button type="submit">Submit Question</button>
+</form>
+
+
+<h2>Admin Responses:</h2>
+<ul>
+    <li th:each="response : ${responses}">
+        <div th:text="${response.response}"></div>
+    </li>
+</ul>
+-->
+
+
+
+<div class="navbar-container"> <!-- Container for navbar with horizontal scrollbar-->
+    <nav>
+        <a href="/">Home</a>
+        <a href="courses">Courses</a>
+
+        <div class="dropdown">
+            <a href="#">Specializations</a>
+            <div class="dropdown-content">
+                <a href="#">Specialization 1</a>
+                <a href="#">Specialization 2</a>
+                <a href="#">Specialization 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Degrees</a>
+            <div class="dropdown-content">
+                <a href="#">Bachelor's Degrees</a>
+                <a href="#">Master's Degrees</a>
+                <a href="#">Doctoral Degrees</a>
+            </div>
+        </div>
+
+        <a href="ulogin">Log In</a>
+        <a href="mycourses">My Courses</a>
+
+    </nav>
+</div>
+
+<h2>Popular Courses</h2>
+<div class="container">
+   <!-- <h2>Popular Courses</h2>-->
+    <div class="card">
+        <img src="../static/corsera.png" alt="image"/>
+        <h3>AI Capstone Project with Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems.</p>
+    </div>
+
+
+
+    <div class="card">
+
+
+        <img src="../static/dp.png"/>
+        <h3>Deep Learning</h3>
+        <p>
+            Deep learning, a subset of machine learning,
+            Unleashes neural networks to mimic human thinking.
+            With layers deep, it extracts patterns and insight,
+            Fueling AI's growth, day and night.</p>
+    </div>
+    <div class="card">
+
+        <img src="../static/XDP~COURSE!~deep-learning-business.png"/>
+        <h3>Deep-learning-business</h3>
+        <p>Deep learning in business, a transformative force,
+            Enhances decision-making, charting a new course.
+            From predictive analytics to automating tasks,
+            It unlocks hidden value and efficiency, unmasked.
+
+
+
+
+        </p>
+    </div>
+
+    <div class="card">
+
+
+
+        <img src="../static/XDP~COURSE!~launch-online-business1.png"/>
+        <h3>online-business</h3>
+        <p>Online business, a digital realm to explore,
+            E-commerce and services, it offers so much more.
+            Global reach, convenience, 24/7 open doors,
+            Opportunities abound like never before.
+
+
+
+
+
+        </p>
+    </div>
+    <div class="card">
+
+
+        <img src="../static/dp.png"/>
+        <h3>Deep Learning</h3>
+        <p>
+            Deep learning, a subset of machine learning,
+            Unleashes neural networks to mimic human thinking.
+            With layers deep, it extracts patterns and insight,
+            Fueling AI's growth, day and night.</p>
+    </div>
+    <div class="card">
+
+
+        <img src="../static/dp.png"/>
+        <h3>Deep Learning</h3>
+        <p>
+            Deep learning, a subset of machine learning,
+            Unleashes neural networks to mimic human thinking.
+            With layers deep, it extracts patterns and insight,
+            Fueling AI's growth, day and night.</p>
+
+    </div>
+
+</div>
+
+
+
+<!--<ul>
+    &lt;!&ndash; Iterate through the adminCourses and display course details &ndash;&gt;
+    <th:block th:each="course : ${adminCourses}">
+        <li th:text="${course.courseName}"></li> &lt;!&ndash; Adjust this to match your Course entity properties &ndash;&gt;
+        <img th:src="@{'/images/' + ${course.courseImage}}" alt="Course Image">
+        <p th:text="${course.description}"></p>
+    </th:block>
+</ul>-->
+<!--
+<div class="container">
+    <div th:each="course : ${adminCourses}">
+        <div class="card">
+            <img th:src="${course.courseImage}" alt="Course Image">
+            <h3 th:text="${course.courseName}"></h3>
+            <p th:text="${course.description}"></p>
+            <button onclick="enroll(1)">Enroll</button>
+        </div>
+    </div>
+</div>
+-->
+
+
+<!-- ... existing code ... -->
+
+<div class="container">
+    <div th:each="course : ${adminCourses}">
+        <div class="card">
+            <img th:src="${course.courseImage}" alt="Course Image">
+            <h3 th:text="${course.courseName}"></h3>
+            <p th:text="${course.description}"></p>
+            <form th:action="@{'/courses/' + ${course.id}}" method="post">
+                <button type="submit">Enroll</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ... remaining code ... -->
+
+
+<script>
+    function enroll(courseId) {
+        window.location.href = "/courses/" + courseId; // Redirect to the specific course page
+    }
+</script>
+
+
+
+<script>
+    function
+    enrollCourse(courseId) {
+        const userId = 1; // Replace with actual user ID (usually stored in the session)
+
+        fetch(`/enroll/${courseId}/${userId}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Enrolled successfully!');
+                    // Optionally, you can perform actions here after successful enrollment
+                    // For example, updating the UI or displaying a success message
+                } else {
+                    console.error('Enrollment failed');
+                    // Handle error case
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Handle fetch error
+            });
+    }
+</script>
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+
+

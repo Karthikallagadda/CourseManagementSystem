@@ -1,0 +1,430 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .course-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .course-info {
+            flex: 1;
+        }
+
+        .course-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .course-description {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .course-progress {
+            flex: 0 0 150px;
+            text-align: right;
+            font-size: 0.9rem;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Courses</h1>
+</header>
+<div class="container">
+    <div class="course-card">
+        <div class="course-info">
+            <div class="course-title">Course Title 1</div>
+            <div class="course-description">This is a sample course description.</div>
+        </div>
+        <div class="course-progress">50% Completed</div>
+    </div>
+    <div class="course-card">
+        <div class="course-info">
+            <div class="course-title">Course Title 2</div>
+            <div class="course-description">Another course description goes here.</div>
+        </div>
+        <div class="course-progress">25% Completed</div>
+    </div>
+    &lt;!&ndash; Add more course cards as needed &ndash;&gt;
+</div>
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .course-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .course-info {
+            flex: 1;
+        }
+
+        .course-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .course-description {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .course-price {
+            margin-top: 10px;
+            color: #007bff;
+        }
+
+        .course-icon {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        .free-course-label {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Courses</h1>
+</header>
+<div class="container">
+    <div class="course-card">
+        <div class="course-info">
+            <div class="course-title">Course Title 1</div>
+            <div class="course-description">This is a sample course description.</div>
+            <div class="course-price">$49.99</div>
+            <div class="free-course-label">Free</div>
+        </div>
+        <div class="course-progress">50% Completed</div>
+        <img class="course-icon" src="course-icon-1.png" alt="Course Icon 1">
+    </div>
+    <div class="course-card">
+        <div class="course-info">
+            <div class="course-title">Course Title 2</div>
+            <div class="course-description">Another course description goes here.</div>
+            <div class="course-price">$29.99</div>
+        </div>
+        <div class="course-progress">25% Completed</div>
+        <img class="course-icon" src="course-icon-2.png" alt="Course Icon 2">
+    </div>
+    &lt;!&ndash; Add more course cards as needed &ndash;&gt;
+</div>
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .course-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .course-info {
+            text-align: center;
+        }
+
+        .course-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .course-description {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .course-price {
+            margin-top: 10px;
+            color: #007bff;
+        }
+
+        .course-icon {
+            max-width: 400px;
+            max-height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .free-course-label {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Courses</h1>
+</header>
+<div class="container">
+    <div class="course-card">
+        <div class="course-info">
+
+
+
+            <img  class="course-icon" src="../static/corsera.png"/>
+            <div class="course-title">Course Title 1</div>
+            <div class="course-description">This is a sample course description.</div>
+            <div class="course-price">$49.99</div>
+            <div class="free-course-label">Free</div>
+        </div>
+    </div>
+    <div class="course-card">
+        <div class="course-info">
+            <img class="course-icon" src="course-icon-2.png" alt="Course Icon 2">
+            <div class="course-title">Course Title 2</div>
+            <div class="course-description">Another course description goes here.</div>
+            <div class="course-price">$29.99</div>
+        </div>
+    </div>
+    &lt;!&ndash; Add more course cards as needed &ndash;&gt;
+</div>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .course-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .course-info {
+            text-align: center;
+        }
+
+        .course-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .course-description {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .course-price {
+            margin-top: 10px;
+            color: #007bff;
+        }
+
+        .course-icon {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .free-course-label {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Courses</h1>
+</header>
+<div class="container">
+    <div class="course-card">
+        <div class="course-info">
+            <img class="course-icon" src="../static/corsera.png" alt="Course Icon 1">
+            <div class="course-title">AI Capston </div>
+            <div class="course-description">This is a sample course description.</div>
+            <div class="course-price">$49.99</div>
+            <div class="free-course-label">Free</div>
+        </div>
+    </div>
+   <!-- <div class="course-card">
+        <div class="course-info">
+            <img class="course-icon" src="course-icon-2.png" alt="Course Icon 2">
+            <div class="course-title">Course Title 2</div>
+            <div class="course-description">Another course description goes here.</div>
+            <div class="course-price">$29.99</div>
+        </div>
+    </div>-->
+    <!-- Add more course cards as needed -->
+</div>
+
+<!--<ul>
+    <th:block th:each="course : ${user.enrolledCourses}">
+        <li>
+            <h2 th:text="${course.courseName}"></h2>
+            <img th:src="${course.courseImage}" alt="Course Image" width="200" />
+            <p th:text="${course.description}"></p>
+        </li>
+    </th:block>
+</ul>-->
+<!--<div class="container">
+    <div th:each="course : ${adminCourses}">
+        <div class="card">
+            <img th:src="${course.courseImage}" alt="Course Image">
+            <h3 th:text="${course.courseName}"></h3>
+            <p th:text="${course.description}"></p>
+            <form th:action="@{'/enroll/' + ${course.id}}" method="post">
+                <button type="submit">Enroll</button>
+            </form>
+        </div>
+    </div>
+</div>-->
+<div class="course-list">
+    <!-- This section will dynamically display the enrolled courses -->
+    <div th:each="course : ${enrolledCourses}" class="course-card">
+        <img th:src="${course.courseImage}" alt="Course Image">
+        <h3 th:text="${course.courseName}">Course Name</h3>
+        <p th:text="${course.description}">Description of the course</p>
+        <!-- Add more details or buttons as needed -->
+    </div>
+</div>
+
+</body>
+</html>

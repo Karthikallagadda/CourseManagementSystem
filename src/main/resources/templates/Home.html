@@ -1,0 +1,804 @@
+<!--
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div>
+<img src="../static/edu.png"   style="max-width: 100%; height: auto;" />
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>-->
+<!--
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hello, world!</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container-fluid">
+        <button class="btn btn-primary" id="sidebarToggle"><span class="navbar-toggler-icon"></span></button>
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="d-flex" id="wrapper">
+    <div class="bg-light border-right" id="sidebar">
+        <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+            <a href="#" class="list-group-item list-group-item-action">Profile</a>
+            <a href="#" class="list-group-item list-group-item-action">Messages</a>
+        </div>
+    </div>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+
+            <img src="../static/edu.png" style="max-width: 100%; height: auto;" />
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script>
+    document.getElementById('sidebarToggle').addEventListener('click', function () {
+        document.getElementById('wrapper').classList.toggle('toggled');
+    });
+</script>
+</body>
+</html>
+-->
+
+<!--
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* Customize the sidebar color */
+        #sidebar {
+            background-color: #dc3545;
+        }
+
+        /* Customize the color of the sidebar toggle button */
+        #sidebarToggle {
+            background-color: #dc3545;
+            color: #fff;
+        }
+    </style>
+    <title>Hello, world!</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container-fluid">
+        <button class="btn btn-primary" id="sidebarToggle"><span class="navbar-toggler-icon"></span></button>
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="d-flex" id="wrapper">
+    <div class="bg-light border-right" id="sidebar">
+        <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+            <a href="#" class="list-group-item list-group-item-action">Profile</a>
+            <a href="#" class="list-group-item list-group-item-action">Messages</a>
+        </div>
+    </div>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <img src="../static/edu.png" style="max-width: 100%; height: auto;" />
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script>
+    document.getElementById('sidebarToggle').addEventListener('click', function () {
+        document.getElementById('wrapper').classList.toggle('toggled');
+    });
+</script>
+</body>
+</html>
+
+-->
+<!--
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* Customize the sidebar color */
+        #sidebar {
+            background-color: #dc3545;
+        }
+
+        /* Customize the color of the sidebar toggle button */
+        #sidebarToggle {
+            background-color: #dc3545;
+            color: #fff;
+        }
+    </style>
+    <title>Hello, world!</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container-fluid">
+        <button class="btn btn-primary" id="sidebarToggle" data-bs-toggle="offcanvas" data-bs-target="#sidebar"><span class="navbar-toggler-icon"></span></button>
+        <a class="navbar-brand  text-white" href="#">Edutech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebarLabel">Sidebar</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action">Profile</a>
+        <a href="#" class="list-group-item list-group-item-action">Messages</a>
+    </div>
+</div>
+<div class="d-flex" id="wrapper">
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <img src="../static/edu.png" style="max-width: 100%; height: auto;" />
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to Coursera-like</h1>
+    <p>Learn Anything, Anytime, Anywhere</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Specializations</a>
+    <a href="#">Degrees</a>
+    <a href="ulogin">Log In</a>
+    <a href="usignup">Sign Up</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card">
+        <img src="../static/corsera.png"/>
+        <h3>Course 1 Title</h3>
+        <p>Course 1 Description</p>
+    </div>
+    <div class="card">
+        <img src="course2.jpg" alt="Course 2">
+        <h3>Course 2 Title</h3>
+        <p>Course 2 Description</p>
+    </div>
+    <div class="card">
+        <img src="course3.jpg" alt="Course 3">
+        <h3>Course 3 Title</h3>
+        <p>Course 3 Description</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Specializations</a>
+    <a href="#">Degrees</a>
+    <a href="ulogin">Log In</a>
+    <a href="usignup">Sign Up</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card">
+
+
+        <img src="/static/corsera.png" alt="image"/>
+        <h3>Course 1 Title</h3>
+        <p>Course 1 Description</p>
+    </div>
+    <div class="card">
+        <img src="../static/course3.png"/>
+        <h3>Project Management Essentials</h3>
+        <p>The Project Management Essentials course is designed to equip individuals with the fundamental knowledge and skills required to effectively initiate, plan, execute, monitor, and close projects. Whether you are a seasoned professional or a newcomer to the field of project management, this course will provide you with essential tools and techniques to successfully manage projects of varying sizes and complexity.</p>
+    </div>
+    <div class="card">
+        <img src="course3.jpg" alt="Course 3">
+        <h3>Course 3 Title</h3>
+        <p>Course 3 Description</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+-->
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+            display: flex;
+        }
+
+        /* Popular Courses heading styles */
+        .popular-courses-heading {
+            font-size: 24px;
+            text-align: left;
+            margin-right: 20px;
+        }
+
+        /* Course cards container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            cursor: pointer; /* Make the cards clickable */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .enroll-button {
+            background-color: #2a73cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Enlarge on hover */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Specializations</a>
+    <a href="#">Degrees</a>
+    <a href="ulogin">Log In</a>
+    <a href="usignup">Sign Up</a>
+</nav>
+
+<div class="container">
+    <div class="popular-courses-heading">Popular Courses</div>
+    <div class="card-container">
+        <div class="card" onclick="location.href='course1.html';">
+            <img src="/static/corsera.png" alt="Course 1">
+            <h3 id="course1-title">Dynamic Course Title 1</h3>
+            <p>Course 1 Description</p>
+            <button class="enroll-button">Enroll</button>
+        </div>
+        <div class="card" onclick="location.href='project_management.html';">
+            <img src="../static/course3.png" alt="Project Management Essentials">
+            <h3 id="project-management-title">Dynamic Project Management Title</h3>
+            <p>The Project Management Essentials course is designed to equip individuals with the fundamental knowledge and skills required to effectively initiate, plan, execute, monitor, and close projects. Whether you are a seasoned professional or a newcomer to the field of project management, this course will provide you with essential tools and techniques to successfully manage projects of varying sizes and complexity.</p>
+            <button class="enroll-button">Enroll</button>
+        </div>
+        <div class="card" onclick="location.href='course3.html';">
+            <img src="course3.jpg" alt="Course 3">
+            <h3 id="course3-title">Dynamic Course Title 3</h3>
+            <p>Course 3 Description</p>
+            <button class="enroll-button">Enroll</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera-like Homepage</title>
+    <style>
+        /* Basic styles for the header */
+        header {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a73cc;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Main content container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Course cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 300px;
+            cursor: pointer; /* Make the cards clickable */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a73cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            color: #2a73cc;
+            border: 1px solid #2a73cc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+<header>
+    <h1>Welcome to EduTech</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Specializations</a>
+    <a href="#">Degrees</a>
+    <a href="ulogin">Log In</a>
+    <a href="usignup">Sign Up</a>
+    <a href="adminlogin">Admin</a>
+</nav>
+
+<div class="container">
+    <h2>Popular Courses</h2>
+    <div class="card" id="course1" onclick="redirectToCourse('course1.html');">
+        <img src="/static/corsera.png" alt="image"/>
+        <h3>AI Capston Project using Deep Learning</h3>
+        <p>The AI Capstone Project using Deep Learning is an advanced program where students apply deep learning techniques to solve real-world problems. Participants develop and deploy deep learning models to address complex challenges, gaining hands-on experience in the field of artificial intelligence and machine learning</p>
+    </div>
+    <div class="card" id="projectManagement" onclick="redirectToCourse('project_management.html');">
+        <img src="../static/course3.png"/>
+        <h3>Project Management Essentials</h3>
+        <p>The Project Management Essentials course imparts fundamental skills to initiate, plan, execute, and close projects. It's suitable for both novices and professionals, equipping them with essential tools. Participants learn to manage projects of diverse sizes and complexity effectively,Additionally,this course empowers learners with the knowledge to monitor.</p>
+    </div>
+    <div class="card" id="course3" onclick="redirectToCourse('course3.html');">
+       <img src="../static/course2.png"/>
+        <h3>Brand and Product Management</h3>
+        <p>Brand and Product Management involves strategically overseeing a brand's image and the development of its products to meet customer needs and market demands. It encompasses brand positioning, market research, and product lifecycle management. Professionals in this field are responsible for shaping brand identity, launching new products, and ensuring long-term brand success.
+
+
+
+
+        </p>
+    </div>
+</div>
+
+<!--<footer>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>-->
+
+
+
+<footer>
+    <div class="contact-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@edutech.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+    </div>
+    <p>&copy; 2023 Coursera-like. All rights reserved.</p>
+</footer>
+<script>
+    function redirectToCourse(url) {
+        window.location.href = url;
+    }
+
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('mouseover', () => {
+            card.style.transform = 'scale(1.05)';
+            card.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.2)';
+        });
+        card.addEventListener('mouseout', () => {
+            card.style.transform = 'scale(1)';
+            card.style.boxShadow = 'none';
+        });
+    });
+</script>
+</body>
+</html>
